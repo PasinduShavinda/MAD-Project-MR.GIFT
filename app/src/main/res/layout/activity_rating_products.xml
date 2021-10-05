@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/feedbackimage"
+    tools:context=".RatingProducts">
+
+    <TextView
+        android:id="@+id/reviewProducts"
+        android:layout_width="379dp"
+        android:layout_height="62dp"
+        android:text="@string/productReview"
+        android:textAlignment="center"
+        android:textColor="#EFEBC5"
+        android:textSize="42sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/perfumeimage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.384"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.156" />
+
+    <ImageView
+        android:id="@+id/perfumeimage"
+        android:layout_width="406dp"
+        android:layout_height="153dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/reviewProducts"
+        app:srcCompat="@drawable/perfume1" />
+
+    <TextView
+        android:id="@+id/labelperfume"
+        android:layout_width="347dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="2dp"
+        android:text="@string/picperfume"
+        android:textAlignment="center"
+        android:textColor="#07514B"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toTopOf="@+id/rateUs"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/perfumeimage"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/rateUs"
+        android:layout_width="349dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="5dp"
+        android:text="@string/rateus"
+        android:textAlignment="center"
+        android:textColor="#4C1919"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/labelperfume" />
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        android:layout_width="238dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="2dp"
+        app:layout_constraintBottom_toTopOf="@+id/rateCount"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rateUs" />
+
+    <TextView
+        android:id="@+id/rateCount"
+        android:layout_width="287dp"
+        android:layout_height="35dp"
+        android:text="@string/rateCount"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ratingBar" />
+
+    <EditText
+        android:id="@+id/et_writeReview"
+        android:layout_width="330dp"
+        android:layout_height="65dp"
+        android:ems="10"
+        android:hint="Write Review.."
+        android:inputType="textPersonName"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rateCount" />
+
+    <Button
+        android:id="@+id/btn_submitReview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="@string/btn_submitReview"
+        app:backgroundTint="#0E1D6E"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_writeReview" />
+
+    <TextView
+        android:id="@+id/showRating"
+        android:layout_width="269dp"
+        android:layout_height="79dp"
+        android:layout_marginTop="4dp"
+        android:text="@string/showRating"
+        android:textColor="#773F53"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.407"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_submitReview" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

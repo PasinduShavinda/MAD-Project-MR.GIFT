@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/feedbackimage"
+    tools:context=".UpdateFeedback">
+
+    <TextView
+        android:id="@+id/txtEditFeedback"
+        android:layout_width="397dp"
+        android:layout_height="61dp"
+        android:text="@string/editfeedbackform"
+        android:textAlignment="center"
+        android:textColor="#EFEBC5"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/et_cusnamefeedback"
+        android:layout_width="198dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="2dp"
+        android:ems="10"
+        android:hint="Enter customer name"
+        android:inputType="textPersonName"
+        android:textColor="#8E8686"
+        android:textSize="20sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toTopOf="@+id/btn_searchcusnamefeedback"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtEditFeedback" />
+
+    <Button
+        android:id="@+id/btn_searchcusnamefeedback"
+        android:layout_width="149dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginBottom="2dp"
+        android:text="@string/searchcusnamefeedback"
+        app:backgroundTint="#1330CF"
+        app:layout_constraintBottom_toTopOf="@+id/et_emailfeedback"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_cusnamefeedback" />
+
+    <EditText
+        android:id="@+id/et_emailfeedback"
+        android:layout_width="332dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="20dp"
+        android:ems="10"
+        android:hint="Enter  your email"
+        android:inputType="textPersonName"
+        android:textColor="#8C8686"
+        android:textSize="20sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toTopOf="@+id/et_editdescrip"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_searchcusnamefeedback" />
+
+    <EditText
+        android:id="@+id/et_editdescrip"
+        android:layout_width="325dp"
+        android:layout_height="98dp"
+        android:layout_marginBottom="12dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="Type description"
+        android:inputType="textMultiLine"
+        android:textColor="#8C8686"
+        android:textSize="20sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toTopOf="@+id/btn_editfeedback"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.534"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imgf1"
+        android:layout_width="109dp"
+        android:layout_height="87dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="432dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/fdmd" />
+
+    <Button
+        android:id="@+id/btn_editfeedback"
+        android:layout_width="191dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="16dp"
+        android:text="@string/btn_editfeedback"
+        android:textSize="16sp"
+        app:backgroundTint="#0D25A8"
+        app:layout_constraintBottom_toTopOf="@+id/btn_deleteFeedback"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.677"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imgf5"
+        android:layout_width="53dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="100dp"
+        android:background="#142791"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btn_deleteFeedback"
+        app:srcCompat="@drawable/delete" />
+
+    <ImageView
+        android:id="@+id/imgf2"
+        android:layout_width="111dp"
+        android:layout_height="81dp"
+        android:layout_marginStart="148dp"
+        android:layout_marginBottom="2dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/icfnm" />
+
+    <ImageView
+        android:id="@+id/imgf4"
+        android:layout_width="53dp"
+        android:layout_height="47dp"
+        android:layout_marginBottom="20dp"
+        android:background="#0D25A8"
+        app:layout_constraintBottom_toTopOf="@+id/imgf5"
+        app:layout_constraintEnd_toStartOf="@+id/btn_editfeedback"
+        app:layout_constraintHorizontal_bias="0.916"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/editf" />
+
+    <Button
+        android:id="@+id/btn_deleteFeedback"
+        android:layout_width="195dp"
+        android:layout_height="53dp"
+        android:layout_marginBottom="98dp"
+        android:text="@string/btn_deleteFeedback"
+        android:textColorHint="#8F5D5D"
+        android:textSize="16sp"
+        app:backgroundTint="#142791"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.671"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imgf3"
+        android:layout_width="54dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="12dp"
+        android:background="#1330CF"
+        app:layout_constraintEnd_toStartOf="@+id/btn_searchcusnamefeedback"
+        app:layout_constraintHorizontal_bias="0.896"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_cusnamefeedback"
+        app:srcCompat="@drawable/search" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

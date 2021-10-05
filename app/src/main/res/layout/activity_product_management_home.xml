@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background1"
+    tools:context=".ProductManagementHome">
+
+    <Button
+        android:id="@+id/btn_EditView"
+        android:layout_width="155dp"
+        android:layout_height="72dp"
+        android:background="@drawable/rounded_button"
+        android:text="Edit Product"
+        android:textColor="@color/white"
+        android:textStyle="bold|italic"
+        app:backgroundTint="#0D2ADE"
+        app:layout_constraintBaseline_toBaselineOf="@+id/button4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.85"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="307dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="96dp"
+        android:layout_marginEnd="52dp"
+        android:text="Product Management"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/gif1"
+        android:layout_width="400dp"
+        android:layout_height="302dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="34dp"
+        android:layout_marginEnd="6dp"
+        android:src="@drawable/giftgif"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        app:layout_constraintVertical_bias="0.05" />
+
+    <Button
+        android:id="@+id/btn_Home_Add"
+        android:layout_width="153dp"
+        android:layout_height="82dp"
+        android:layout_marginStart="48dp"
+        android:background="@drawable/rounded_button"
+        android:text="ADD PRODUCTS"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold|italic"
+        app:backgroundTint="#0D2ADE"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btn_Home_View"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btn_Home_View"
+        android:layout_width="154dp"
+        android:layout_height="79dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="128dp"
+        android:background="@drawable/rounded_button"
+        android:text="View Products"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold|italic"
+        app:backgroundTint="#0D2ADE"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="146dp"
+        android:layout_height="68dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/rounded_button"
+        android:text="Calculator"
+        android:textColor="@color/white"
+        android:textStyle="bold|italic"
+        app:backgroundTint="#0D2ADE"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

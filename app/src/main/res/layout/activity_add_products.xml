@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+ >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:background="@drawable/back"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:context=".AddProducts">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="273dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="68dp"
+            android:layout_marginTop="32dp"
+            android:text="Product Insert Form"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/edt_txt_Description"
+            android:layout_width="299dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="36dp"
+            android:ems="10"
+            android:hint="@string/description"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.491"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edt_txt_PName" />
+
+        <EditText
+            android:id="@+id/edt_txt_Price"
+            android:layout_width="304dp"
+            android:layout_height="48dp"
+            android:ems="10"
+            android:hint="@string/price"
+            android:inputType="numberDecimal"
+            app:layout_constraintBottom_toTopOf="@+id/btn_submit"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edt_txt_Description"
+            app:layout_constraintVertical_bias="0.277" />
+
+        <EditText
+            android:id="@+id/edt_txt_PName"
+            android:layout_width="301dp"
+            android:layout_height="49dp"
+            android:layout_marginTop="28dp"
+            android:ems="10"
+            android:hint="@string/productname"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.472"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cover" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="48dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/addnext"
+            android:clickable="true"
+            app:backgroundTint="@color/white"
+            app:layout_constraintBottom_toBottomOf="@+id/cover"
+            app:layout_constraintEnd_toEndOf="@+id/cover"
+            app:layout_constraintHorizontal_bias="0.857"
+            app:layout_constraintStart_toStartOf="@+id/cover"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <ImageView
+            android:id="@+id/cover"
+            android:layout_width="231dp"
+            android:layout_height="141dp"
+            android:layout_marginTop="56dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView"
+            app:srcCompat="@drawable/ic_photo_camera_black_48dp" />
+
+        <Button
+            android:id="@+id/btn_view"
+            android:layout_width="133dp"
+            android:layout_height="57dp"
+            android:layout_marginTop="84dp"
+            android:layout_marginEnd="68dp"
+            android:background="@drawable/rounded_button"
+            android:backgroundTint="#9FACF4"
+            android:text="View"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:backgroundTint="#0D2ADE"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edt_txt_Price" />
+
+        <Button
+            android:id="@+id/btn_submit"
+            android:layout_width="133dp"
+            android:layout_height="57dp"
+            android:layout_marginStart="52dp"
+            android:background="@drawable/rounded_button"
+            android:backgroundTint="#DDD377"
+            android:text="Submit"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:backgroundTint="#0D2ADE"
+            app:layout_constraintBaseline_toBaselineOf="@+id/btn_view"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.507"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

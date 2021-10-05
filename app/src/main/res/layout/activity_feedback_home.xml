@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/feedbackimage"
+    tools:context=".FeedbackHome">
+
+    <ImageView
+        android:id="@+id/fm1"
+        android:layout_width="337dp"
+        android:layout_height="198dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/fm2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.527"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/n" />
+
+    <ImageView
+        android:id="@+id/fm3"
+        android:layout_width="123dp"
+        android:layout_height="198dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginBottom="32dp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_adminCal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/e" />
+
+    <ImageView
+        android:id="@+id/fm2"
+        android:layout_width="212dp"
+        android:layout_height="203dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="24dp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_adminview"
+        app:layout_constraintEnd_toStartOf="@+id/fm3"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/f8" />
+
+    <Button
+        android:id="@+id/btn_adminCal"
+        android:layout_width="154dp"
+        android:layout_height="74dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/btn_adminCal"
+        android:textSize="16sp"
+        app:backgroundTint="#091F9A"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/btn_adminview"
+        android:layout_width="166dp"
+        android:layout_height="76dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/btn_adminview"
+        android:textColor="#FBFBFB"
+        android:textSize="16sp"
+        app:backgroundTint="#091F9A"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="392dp"
+        android:layout_height="57dp"
+        android:text="@string/manageFeedback"
+        android:textAlignment="center"
+        android:textColor="#FAF9F1"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/fm1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.039" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

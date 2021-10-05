@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/feedbackimage"
+    tools:context=".Feedback">
+
+    <TextView
+        android:id="@+id/feeedbackForm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="1dp"
+        android:text="@string/feedbackForm"
+        android:textColor="#EFEBC5"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/feedCusName"
+        android:layout_width="162dp"
+        android:layout_height="31dp"
+        android:layout_marginTop="115dp"
+        android:layout_marginEnd="200dp"
+        android:layout_marginBottom="1dp"
+        android:text="@string/fcusName"
+        android:textColor="#243C3A"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/et_nameFeed"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/et_nameFeed"
+        android:layout_width="205dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="170dp"
+        android:layout_marginBottom="8dp"
+        android:ems="10"
+        android:hint="Enter customer name"
+        android:inputType="textPersonName"
+        android:textColor="#313653"
+        android:textColorHighlight="#5AD6E6"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toTopOf="@+id/feedemail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/feedCusName" />
+
+    <TextView
+        android:id="@+id/feedemail"
+        android:layout_width="171dp"
+        android:layout_height="43dp"
+        android:layout_marginEnd="200dp"
+        android:text="@string/feedemail"
+        android:textColor="#1C2020"
+        android:textSize="21sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/et_entercusfeedemail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_nameFeed" />
+
+    <EditText
+        android:id="@+id/et_entercusfeedemail"
+        android:layout_width="365dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="8dp"
+        android:ems="10"
+        android:hint="@string/et_emailfeedback"
+        android:inputType="textPersonName"
+        android:textColor="#313653"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toTopOf="@+id/feeddescrip"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.822"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/feedemail" />
+
+    <TextView
+        android:id="@+id/feeddescrip"
+        android:layout_width="307dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="2dp"
+        android:text="@string/feedbackdescrip"
+        android:textColor="#151313"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/et_enterfeeddescrip"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.345"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_entercusfeedemail" />
+
+    <EditText
+        android:id="@+id/et_enterfeeddescrip"
+        android:layout_width="341dp"
+        android:layout_height="87dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="30dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="@string/et_editdescrip"
+        android:inputType="textMultiLine"
+        android:textColor="#313653"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toTopOf="@+id/btn_addFeedback"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/feeddescrip" />
+
+    <Button
+        android:id="@+id/btn_addFeedback"
+        android:layout_width="189dp"
+        android:layout_height="53dp"
+        android:layout_marginBottom="20dp"
+        android:text="@string/Feedsubmitbutton"
+        app:backgroundTint="#1A297E"
+        app:layout_constraintBottom_toTopOf="@+id/btn_editFeedback"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btn_editFeedback"
+        android:layout_width="151dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="20dp"
+        android:text="@string/updateFeedback"
+        app:backgroundTint="#631071"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btn_view_feedback"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btn_view_feedback"
+        android:layout_width="101dp"
+        android:layout_height="61dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="20dp"
+        android:text="@string/view_feedback"
+        app:backgroundTint="#631071"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btn_rate"
+        app:layout_constraintTop_toBottomOf="@+id/btn_addFeedback"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="119dp"
+        android:layout_height="99dp"
+        android:layout_marginBottom="400dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.575"
+        app:layout_constraintStart_toEndOf="@+id/feedCusName"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.685"
+        app:srcCompat="@drawable/d" />
+
+    <Button
+        android:id="@+id/btn_rate"
+        android:layout_width="105dp"
+        android:layout_height="61dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="20dp"
+        android:text="@string/btn_rate"
+        app:backgroundTint="#631071"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

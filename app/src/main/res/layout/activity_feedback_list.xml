@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgfl4"
+    android:orientation="vertical"
+    tools:context=".feedbackList">
+
+    <TextView
+        android:id="@+id/feedlist"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:baselineAligned="false"
+        android:shadowColor="#20B1A4"
+        android:text="@string/feedlist"
+        android:textAlignment="center"
+        android:textColor="#0E1F75"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        tools:layout_conversion_absoluteHeight="78dp"
+        tools:layout_conversion_absoluteWidth="411dp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <ListView
+        android:id="@+id/li_feedback"
+        android:layout_width="match_parent"
+        android:layout_height="702dp"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_feedList"
+        app:layout_constraintVertical_bias="0.509"
+        tools:layout_conversion_absoluteHeight="653dp"
+        tools:layout_conversion_absoluteWidth="411dp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="78dp">
+
+    </ListView>
+
+
+</LinearLayout>

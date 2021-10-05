@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back"
+    tools:context=".orderEdit">
+
+    <TextView
+        android:id="@+id/tv_topicEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/tv_topicRdit"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_searchEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="28dp"
+        android:text="@string/tv_searchEdit"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/tv_contactEdit"
+        app:layout_constraintEnd_toStartOf="@+id/et_nameEdit"
+        app:layout_constraintHorizontal_bias="0.767"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_topicEdit"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/btn_search_edit"
+        android:layout_width="45dp"
+        android:layout_height="33dp"
+        android:layout_marginEnd="44dp"
+        android:background="@drawable/search"
+        android:text="@string/btn_search_edit"
+        android:textSize="8sp"
+        app:backgroundTint="#0D2ADE"
+        app:layout_constraintBottom_toTopOf="@+id/et_phoneEdit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_topicEdit"
+        app:layout_constraintVertical_bias="0.989"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/tv_contactEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="76dp"
+        android:text="@string/tv_contactEdit"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/tv_postalEdit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.139"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_addressEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tv_addressEdit"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/tv_postalEdit"
+        app:layout_constraintEnd_toStartOf="@+id/et_addressEdit"
+        app:layout_constraintHorizontal_bias="0.427"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_contactEdit"
+        app:layout_constraintVertical_bias="0.385" />
+
+    <TextView
+        android:id="@+id/tv_postalEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="60dp"
+        android:text="@string/tv_postalEdit"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/tv_wrapEdit"
+        app:layout_constraintEnd_toStartOf="@+id/et_postalEdit"
+        app:layout_constraintHorizontal_bias="0.53"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_wrapEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:text="@string/tv_wrapEdit"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toStartOf="@+id/radioGroup3"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_postalEdit" />
+
+    <TextView
+        android:id="@+id/tv_payEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tv_payEdit"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/tv_dateEdit"
+        app:layout_constraintEnd_toStartOf="@+id/radioGroup4"
+        app:layout_constraintHorizontal_bias="0.682"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_wrapEdit"
+        app:layout_constraintVertical_bias="0.508" />
+
+    <EditText
+        android:id="@+id/et_phoneEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/et_addressEdit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.142"
+        app:layout_constraintStart_toEndOf="@+id/tv_contactEdit"
+        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+    <EditText
+        android:id="@+id/et_addressEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="48dp"
+        android:layout_marginBottom="8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/et_postalEdit"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+    <EditText
+        android:id="@+id/et_postalEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="48dp"
+        android:layout_marginBottom="8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/radioGroup3"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup3"
+        android:layout_width="103dp"
+        android:layout_height="88dp"
+        android:layout_marginBottom="100dp"
+        app:layout_constraintBottom_toTopOf="@+id/et_dateEdit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <RadioButton
+            android:id="@+id/rd_yesEdit"
+            android:layout_width="65dp"
+            android:layout_height="37dp"
+            android:text="@string/rd_yesEdit"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <RadioButton
+            android:id="@+id/rd_noEdit"
+            android:layout_width="67dp"
+            android:layout_height="32dp"
+            android:text="@string/rd_noEdit"
+            tools:ignore="TouchTargetSizeCheck" />
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/radioGroup4"
+        android:layout_width="97dp"
+        android:layout_height="62dp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_deleteEdit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.48"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup3"
+        app:layout_constraintVertical_bias="0.084">
+
+        <RadioButton
+            android:id="@+id/rd_cashEdit"
+            android:layout_width="79dp"
+            android:layout_height="32dp"
+            android:text="@string/rd_cashEdit"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <RadioButton
+            android:id="@+id/rd_cardEdit"
+            android:layout_width="73dp"
+            android:layout_height="31dp"
+            android:text="@string/rd_cardEdit"
+            tools:ignore="TouchTargetSizeCheck" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btn_editEdit"
+        android:layout_width="62dp"
+        android:layout_height="59dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/editod"
+        app:backgroundTint="#0030BF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btn_deleteEdit"
+        app:layout_constraintHorizontal_bias="0.543"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <Button
+        android:id="@+id/btn_deleteEdit"
+        android:layout_width="80dp"
+        android:layout_height="59dp"
+        android:layout_marginEnd="96dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/deleteod"
+        app:backgroundTint="#DD1313"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/tv_dateEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="120dp"
+        android:text="@string/tv_dateEdit"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/btn_editEdit"
+        app:layout_constraintEnd_toStartOf="@+id/et_dateEdit"
+        app:layout_constraintHorizontal_bias="0.352"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/et_dateEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="48dp"
+        android:layout_marginBottom="108dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/btn_deleteEdit"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    <EditText
+        android:id="@+id/et_nameEdit"
+        android:layout_width="157dp"
+        android:layout_height="46dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/et_phoneEdit"
+        app:layout_constraintEnd_toStartOf="@+id/btn_search_edit"
+        app:layout_constraintTop_toBottomOf="@+id/tv_topicEdit"
+        app:layout_constraintVertical_bias="0.988"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

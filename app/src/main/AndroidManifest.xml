@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="mad.example.teamdragons">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.TeamDragons">
+        <activity
+            android:name=".loginPage"
+            android:exported="true" />
+        <activity
+            android:name=".AdminDashboardGift"
+            android:exported="true" />
+        <activity
+            android:name=".UserProSplashScreen"
+            android:exported="true" />
+        <activity
+            android:name=".OrderSplashScreen"
+            android:exported="true" />
+        <activity
+            android:name=".orderSuccess"
+            android:exported="true" />
+        <activity
+            android:name=".AdminOrderHome"
+            android:exported="true" />
+        <activity
+            android:name=".OrderCalculation"
+            android:exported="true" />
+        <activity
+            android:name=".createUserProfile"
+            android:exported="true" />
+        <activity
+            android:name=".orderList"
+            android:exported="true" />
+        <activity
+            android:name=".orderEdit"
+            android:exported="true" />
+        <activity
+            android:name=".orderActivityFirst"
+            android:exported="true" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" />
+        <activity
+            android:name=".UserList"
+            android:label=" User List"
+            android:parentActivityName=".createUserProfile" /> <!-- ...........................SUPI.............................. -->
+        <activity
+            android:name=".feedbackSuccess"
+            android:exported="true" />
+        <activity
+            android:name=".feedbackSplashScreen"
+            android:exported="true" />
+        <activity
+            android:name=".feedbackSuccessSplashScreen"
+            android:exported="true" />
+        <activity
+            android:name=".FeedbackHome"
+            android:exported="true" />
+        <activity
+            android:name=".RatingProducts"
+            android:exported="true" />
+        <activity
+            android:name=".feedbackCalculation"
+            android:exported="true" />
+        <activity
+            android:name=".feedbackList"
+            android:exported="true" />
+        <activity
+            android:name=".Feedback"
+            android:exported="true" />
+        <activity
+            android:name=".UpdateFeedback"
+            android:exported="true" /> <!-- ...........................SHAMALI.................... -->
+        <activity
+            android:name=".SpashscreenPay"
+            android:exported="true" />
+        <activity
+            android:name=".RefundedSucess"
+            android:exported="true" />
+        <activity
+            android:name=".CalPay"
+            android:exported="true" />
+        <activity
+            android:name=".PaymentSuccess"
+            android:exported="true" />
+        <activity
+            android:name=".PayDetailsCustomer"
+            android:exported="true" />
+        <activity
+            android:name=".DisplayPaymentDetails"
+            android:exported="true" />
+        <activity
+            android:name=".UpdatePayment"
+            android:exported="true" />
+        <activity
+            android:name=".PaymentInsert"
+            android:exported="true" /> <!-- ...........................CHADUNI.................... -->
+        <activity
+            android:name=".Product_Calculator"
+            android:exported="true" />
+        <activity
+            android:name=".PictureProduct"
+            android:exported="true" />
+        <activity
+            android:name=".ClientHome"
+            android:exported="true" />
+        <activity
+            android:name=".ProductManagementHome"
+            android:exported="true" />
+        <activity
+            android:name=".ViewProducts"
+            android:exported="true" />
+        <activity
+            android:name=".ClientProducts"
+            android:exported="true" />
+        <activity
+            android:name=".EditProducts"
+            android:exported="true" />
+        <activity
+            android:name=".AddProducts"
+            android:exported="true" />
+        <activity
+            android:name=".SplashScreen"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

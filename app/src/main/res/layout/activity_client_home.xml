@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ClientProducts" >
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="77dp"
+        android:background="#041263"
+        android:text="｡❈  🎀  𝑀𝓇. 𝒢𝒾𝒻𝓉𝓈  🎀  ❈｡"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="34sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="#041263"
+        android:text="Let's Start Your Order!!"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/btn_feedback_view"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="#041263"
+        android:onClick="GetFeedback"
+        android:text="We value your feedback"
+        android:textColor="#F3EFEF" />
+
+    <ListView
+        android:id="@+id/clientproductlist"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"/>
+
+
+</LinearLayout>

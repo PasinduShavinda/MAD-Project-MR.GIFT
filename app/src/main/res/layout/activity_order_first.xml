@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back"
+    tools:context=".orderActivityFirst">
+
+    <TextView
+        android:id="@+id/tv_topicOF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:text="@string/tv_topicOF"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/et_nameOF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_cusNameOF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tv_cusNameOF"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/tv_contactOF"
+        app:layout_constraintEnd_toStartOf="@+id/et_nameOF"
+        app:layout_constraintHorizontal_bias="0.32"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_topicOF"
+        app:layout_constraintVertical_bias="0.508" />
+
+    <EditText
+        android:id="@+id/et_nameOF"
+        android:layout_width="191dp"
+        android:layout_height="49dp"
+        android:layout_marginEnd="56dp"
+        android:layout_marginBottom="8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        app:layout_constraintBottom_toTopOf="@+id/et_phoneOF"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/tv_contactOF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="36dp"
+        android:text="@string/tv_contactOF"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/tv_addressOF"
+        app:layout_constraintEnd_toStartOf="@+id/et_phoneOF"
+        app:layout_constraintHorizontal_bias="0.638"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/et_phoneOF"
+        android:layout_width="190dp"
+        android:layout_height="42dp"
+        android:layout_marginEnd="56dp"
+        android:ems="10"
+        android:inputType="phone"
+        android:minHeight="48dp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tv_contactOF"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/tv_addressOF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="36dp"
+        android:text="@string/tv_addressOF"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/tv_postalOF"
+        app:layout_constraintEnd_toStartOf="@+id/et_addressOF"
+        app:layout_constraintHorizontal_bias="0.351"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/et_addressOF"
+        android:layout_width="187dp"
+        android:layout_height="46dp"
+        android:layout_marginEnd="56dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tv_addressOF"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/tv_postalOF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginBottom="40dp"
+        android:text="@string/tv_postalOF"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/tv_wrappOF"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/et_postalOF"
+        android:layout_width="190dp"
+        android:layout_height="39dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/radioGroup"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintStart_toEndOf="@+id/tv_postalOF"
+        app:layout_constraintTop_toBottomOf="@+id/et_addressOF"
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/tv_wrappOF"
+        android:layout_width="127dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginBottom="36dp"
+        android:text="@string/tv_wrappOF"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/tv_payOF"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="81dp"
+        android:layout_height="84dp"
+        android:layout_marginTop="118dp"
+        android:layout_marginBottom="118dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_payOF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.153"
+        app:layout_constraintStart_toEndOf="@+id/tv_wrappOF"
+        app:layout_constraintTop_toTopOf="@+id/tv_addressOF"
+        app:layout_constraintVertical_bias="0.35">
+
+        <RadioButton
+            android:id="@+id/rd_wrapYesOF"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/rd_payYesOF" />
+
+        <RadioButton
+            android:id="@+id/rd_wrapNoOF"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="@string/rd_payNoOF"
+            tools:ignore="TouchTargetSizeCheck" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/tv_payOF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginBottom="40dp"
+        android:text="@string/tv_payOF"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/tv_dateOF"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup2"
+        android:layout_width="86dp"
+        android:layout_height="71dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.309"
+        app:layout_constraintStart_toEndOf="@+id/tv_payOF"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup"
+        app:layout_constraintVertical_bias="0.07">
+
+        <RadioButton
+            android:id="@+id/rd_cashOF"
+            android:layout_width="match_parent"
+            android:layout_height="34dp"
+            android:checked="true"
+            android:text="@string/rd_cashOF"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <RadioButton
+            android:id="@+id/rd_cardOF"
+            android:layout_width="match_parent"
+            android:layout_height="37dp"
+            android:minHeight="48dp"
+            android:text="@string/rd_cardOF"
+            tools:ignore="TouchTargetSizeCheck" />
+    </RadioGroup>
+
+
+    <Button
+        android:id="@+id/btn_submitOF"
+        android:layout_width="307dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="28dp"
+        android:background="@drawable/rounded_button"
+        android:text="@string/btn_sumbit"
+        app:backgroundTint="#0D2ADE"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_dateOF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="180dp"
+        android:text="@string/tv_dateOF"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/et_dateOF"
+        app:layout_constraintHorizontal_bias="0.32"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/et_dateOF"
+        android:layout_width="202dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="56dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/btn_submitOF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup2"
+        app:layout_constraintVertical_bias="0.19"
+        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/tv_totPriceOF"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:text="@string/tv_totPriceOF"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/btn_submitOF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.611"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_dateOF"
+        app:layout_constraintVertical_bias="0.357" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="78dp"
+        android:background="#041263"
+        android:text="｡❈  🎀  𝑀𝓇. 𝒢𝒾𝒻𝓉𝓈  🎀  ❈｡"
+        android:textAlignment="center"
+        android:textColor="#F6F6F6"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/tv_topicOF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.068" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

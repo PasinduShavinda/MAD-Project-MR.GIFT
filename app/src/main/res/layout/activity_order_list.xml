@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back"
+    tools:context=".orderList">
+
+    <TextView
+        android:id="@+id/tv_orderListTopicCus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/tv_orderListTopicCus"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ListView
+        android:id="@+id/lv_orderList"
+        android:layout_width="233dp"
+        android:layout_height="357dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.657"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_orderListTopicCus"
+        app:layout_constraintVertical_bias="0.501" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="96dp"
+        android:layout_height="356dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/lv_orderList"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.569">
+
+        <TextView
+            android:id="@+id/tv_NameOLL"
+            android:layout_width="93dp"
+            android:layout_height="37dp"
+            android:text="@string/tv_cusNameOF"
+            app:layout_constraintBottom_toTopOf="@+id/tv_AddressOLL"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.317" />
+
+        <TextView
+            android:id="@+id/tv_AddressOLL"
+            android:layout_width="87dp"
+            android:layout_height="40dp"
+            android:layout_marginBottom="16dp"
+            android:text="@string/tv_addressOF"
+            app:layout_constraintBottom_toTopOf="@+id/tv_PostalOLL"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.555"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_ContactOLL"
+            android:layout_width="89dp"
+            android:layout_height="33dp"
+            android:text="@string/et_userPhoneCP"
+            app:layout_constraintBottom_toTopOf="@+id/tv_WrapOLL"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.428"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.373" />
+
+        <TextView
+            android:id="@+id/tv_WrapOLL"
+            android:layout_width="73dp"
+            android:layout_height="36dp"
+            android:text="@string/tv_WrapOLL"
+            app:layout_constraintBottom_toTopOf="@+id/tv_PaymentOLL"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.15"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_PostalOLL"
+            app:layout_constraintVertical_bias="0.611" />
+
+        <TextView
+            android:id="@+id/tv_PaymentOLL"
+            android:layout_width="65dp"
+            android:layout_height="16dp"
+            android:text="@string/tv_payOF"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.107"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.792" />
+
+        <TextView
+            android:id="@+id/tv_DateOLL"
+            android:layout_width="66dp"
+            android:layout_height="26dp"
+            android:text="@string/tv_dateOF"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.111"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_PaymentOLL"
+            app:layout_constraintVertical_bias="0.636" />
+
+        <TextView
+            android:id="@+id/tv_PostalOLL"
+            android:layout_width="87dp"
+            android:layout_height="36dp"
+            android:text="@string/tv_postalOF"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.558" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="141dp"
+        android:layout_height="88dp"
+        android:layout_marginTop="44dp"
+        app:layout_constraintBottom_toTopOf="@+id/lv_orderList"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_orderListTopicCus"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/gift01" />
+
+    <Button
+        android:id="@+id/btn_paymentOL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_button"
+        android:text="@string/btnPaymentOL"
+        android:textSize="14sp"
+        android:textStyle="bold|italic"
+        app:backgroundTint="#0D2ADE"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lv_orderList"
+        app:layout_constraintVertical_bias="0.719" />
+
+    <TextView
+        android:id="@+id/tv_orderPriceLV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tv_orderPriceLV"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_paymentOL"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lv_orderList"
+        app:layout_constraintVertical_bias="0.148" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

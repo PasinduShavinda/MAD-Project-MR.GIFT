@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/payment_admin_backg"
+    tools:context=".feedbackCalculation">
+
+    <TextView
+        android:id="@+id/secweekfeedtot"
+        android:layout_width="212dp"
+        android:layout_height="56dp"
+        android:layout_marginBottom="10dp"
+        android:text="@string/secweekfeedtot"
+        android:textColor="#171616"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/thirdweekfeedtot"
+        app:layout_constraintEnd_toStartOf="@+id/et_secweekfeedtot"
+        app:layout_constraintHorizontal_bias="0.916"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/firstweekfeedtot"
+        android:layout_width="213dp"
+        android:layout_height="52dp"
+        android:layout_marginBottom="36dp"
+        android:text="@string/firstweekfeedtot"
+        android:textColor="#171616"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/secweekfeedtot"
+        app:layout_constraintEnd_toStartOf="@+id/et_firstweekfeed"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/totfeedback"
+        android:layout_width="196dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/totfeedback"
+        android:textColor="#171616"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/avgfeedbacks"
+        app:layout_constraintEnd_toStartOf="@+id/et_totfeedback" />
+
+    <TextView
+        android:id="@+id/thirdweekfeedtot"
+        android:layout_width="206dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginEnd="13dp"
+        android:layout_marginBottom="12dp"
+        android:text="@string/thirdweekfeedtot"
+        android:textColor="#171616"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/fourthweekfeedtot"
+        app:layout_constraintEnd_toStartOf="@+id/et_thirdweekfeedtot"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/et_thirdweekfeedtot"
+        android:layout_width="145dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:ems="10"
+        android:hint="Third Week"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textColor="#786F6F"
+        android:textColorHint="#6E5C5C"
+        app:layout_constraintBottom_toTopOf="@+id/et_fourthweekfeedtot"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <EditText
+        android:id="@+id/et_fourthweekfeedtot"
+        android:layout_width="142dp"
+        android:layout_height="51dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="20dp"
+        android:ems="10"
+        android:hint="Fourth Week"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textColor="#786F6F"
+        android:textColorHint="#6E5C5C"
+        app:layout_constraintBottom_toTopOf="@+id/et_totfeedback"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <EditText
+        android:id="@+id/et_totfeedback"
+        android:layout_width="143dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="12dp"
+        android:ems="10"
+        android:hint="Total Feedbacks"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textColor="#786F6F"
+        android:textColorHint="#6E5C5C"
+        app:layout_constraintBottom_toTopOf="@+id/et_avgfeedbacks"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/feedcal"
+        android:layout_width="397dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/feedcal"
+        android:textAlignment="center"
+        android:textColor="#1A276C"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.47"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_feedcal"
+        android:layout_width="134dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginBottom="90dp"
+        android:text="@string/calfeedback"
+        android:textColorHighlight="#24A3B3"
+        app:backgroundTint="#243281"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btn_clearfeed"
+        app:layout_constraintHorizontal_bias="0.083"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btn_clearfeed"
+        android:layout_width="111dp"
+        android:layout_height="52dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginBottom="90dp"
+        android:text="@string/btn_clearfeed"
+        android:textColorHighlight="#40A3AF"
+        app:backgroundTint="#243281"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="193dp"
+        android:layout_height="78dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/fcaln" />
+
+    <EditText
+        android:id="@+id/et_firstweekfeed"
+        android:layout_width="133dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="102dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="25dp"
+        android:ems="10"
+        android:hint="First Week"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textColor="#393030"
+        android:textColorHint="#6E5C5C"
+        app:layout_constraintBottom_toTopOf="@+id/et_secweekfeedtot"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/feedcal"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <EditText
+        android:id="@+id/et_secweekfeedtot"
+        android:layout_width="135dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="20dp"
+        android:ems="10"
+        android:hint="Second Week"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textColor="#BAAEAE"
+        android:textColorHint="#6E5C5C"
+        app:layout_constraintBottom_toTopOf="@+id/et_thirdweekfeedtot"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/fourthweekfeedtot"
+        android:layout_width="211dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="20dp"
+        android:text="@string/fourthweekfeedtot"
+        android:textColor="#171616"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/totfeedback"
+        app:layout_constraintEnd_toStartOf="@+id/et_fourthweekfeedtot"
+        app:layout_constraintHorizontal_bias="0.939"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/avgfeedbacks"
+        android:layout_width="203dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/avgfeedbacks"
+        android:textColor="#171616"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/btn_feedcal"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/et_avgfeedbacks"
+        android:layout_width="142dp"
+        android:layout_height="52dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="10dp"
+        android:ems="10"
+        android:hint="Average"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textColorHint="#6E5C5C"
+        app:layout_constraintBottom_toTopOf="@+id/btn_clearfeed"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
